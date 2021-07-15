@@ -1,4 +1,4 @@
-const User = require('../login')
+const User = require('../user')
 const db = require('../../config/mongoose')
 const users = [
   {

@@ -4,13 +4,13 @@ h1 {
 }
 
 body {
-  background-color: #757575;
+  background-color: #f7f4f4;
 }
 
 div.container {
   width: 30%;
   margin: 2em auto;
-  background-color: #f5f5f5;
+  background-color: #5c5858;
   padding: 36px;
   border-radius: 8px;
 }
@@ -85,7 +85,7 @@ form.was-validated .form-control:valid ~ .valid-feedback {
 
 #submit-btn {
   width: 100%;
-  background-color: #757575;
+  background-color: #480af1;
   border: none;
   color: #f5f5f5;
   font-weight: 600;

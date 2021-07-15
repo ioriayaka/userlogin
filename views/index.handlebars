@@ -1,12 +1,12 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">user_authentication</a>
+      <a class="navbar-brand" href="/">使用者登入</a>
     </div>
   </nav>
-  <form action="/index" novalidate>
+  <form action="/index" method="POST" novalidate>
     <div class="form-goup">
-      <label for="email">Email:</label>
+      <label for="email"><h1>Email:</h1></label>
       <input type="text" class="form-control" name="email" id="email" placeholder="請輸入Email...
   " required>
       <div class="invalid-feedback">
@@ -15,13 +15,16 @@
     </div>
     <form action="/index" novalidate>
       <div class="form-goup">
-        <label for="password">Password</label>
+        <label for="password"><h1>Password:</h1></label>
         <input type="password" class="form-control" name="password" id="password" placeholder="請輸入密碼..." required>
         <div class="invalid-feedback">
           This field is required.
         </div>
       </div>
       <button id="submit-btn" type="submit" class="btn btn-primary">登入</button>
+      {{#if fail}}
+      <div class="alert alert-warning my-3" role="alert">Username 或 Password 錯誤</div>
+      {{/if}}
     </form>
   </form>
 </div>
