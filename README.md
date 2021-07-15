@@ -1,38 +1,45 @@
-#  User authentication
+# User authentication
 此專案利用 Express 和 MongoDB 打造簡單的帳號密碼檢查網站。
 
-## 功能
-- 用 cookie 保存使用者登入狀態
+---
 
-## 環境建置 Environment Setup
+# 專案畫面
+![](https://i.imgur.com/0yZ1coa.png)
 
-1. nvm & Node.js
-2. nodemon
-3. MongoDB
+---
 
-## 安裝 Installing
+# 環境建置
+* Visual Studio Code
+* Express 4.17.1
+* Node.js
+* express-handlebars 5.3.2
+* cookie-parser 1.4.5
+* mongoose 5.13.2
 
-1. 在終端機輸入指令 Clone 此專案至本機電腦
+---
+
+# 安裝流程
+1. 開啟終端機，並cd 要放專案的位置並執行:
 ```
-git clone https://github.com/Whaleep/user-authentication.git
+git clone https://github.com/ioriayaka/userlogin.git
 ```
-2. 進入專案目錄
+2. 進入專案資料夾
 ```
-cd user-authentication
+cd userlogin
 ```
-3. 安裝相關套件
+3. 安裝 npm 套件
 ```
 npm install
 ```
-4. 新增種子資料
+4. 安裝 nodemon 套件 (若未安裝)
+```npm install -g nodemon```
+5. 新增種子資料
 ```
 npm run seed
 ```
-5. 啟動專案
+6. 啟動伺服器，執行 app.js 檔案
 ```
 npm run dev
 ```
-6. 出現以下訊息後，即可在 http://localhost:3000 開始使用
-```
-Express is listening on localhost:3000
-```
+7. 當終端機出現以下字樣，表示啟動完成
+```The Express server is running on http://localhost:3000```
